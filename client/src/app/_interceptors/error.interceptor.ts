@@ -46,7 +46,7 @@ export class ErrorInterceptor implements HttpInterceptor {
             default:
               this.toastr.error('Something unexpected went wrong');
               console.log(error);
-                break;
+              break;
           }
         }
         return throwError(error);
